@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+ <h1>Welcome to LFD</h1>
+
+<% else %>
+<div class="center hero-unit">
+    <h1>Local Food Directory</h1>
+
+    <h2>
+      Welcome to Charlotte's local food directory!
+    </h2>
+    <p>Sign up to receive updates from producers in the area and updates to the directory. <br>Going live soon!</p>
+    <p>Questions? Contact <a href="mailto:janet@venture-consulting.com">Janet</a> for more information and to be added to the local produce and meat directory of Charlotte</p>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+ <% end %>
